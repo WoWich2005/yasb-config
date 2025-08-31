@@ -1,0 +1,44 @@
+:root {
+    --mauve: #cba6f7;
+    --red: #f38ba8;
+    --yellow: #f9e2af;
+    --blue: #89b4fa;
+    --lavender: #b4befe;
+    --text: #cdd6f4;
+    --subtext1: #bac2de;
+    --subtext0: #a6adc8;
+    --overlay2: #9399b2;
+    --overlay1: #7f849c;
+    --overlay0: #6c7086;
+    --surface2: #585b70;
+    --surface1: #45475a;
+    --surface0: #282936;
+    --base: #1e1e2e;
+    --crust: rgba(32, 32, 43, 0.92);
+}
+
+* {
+    font-size: 12px;
+    color: var(--text);
+    font-weight: 600;
+    font-family: "JetBrainsMono NFP";
+    margin: 0;
+    padding: 0;
+}
+
+.tooltip {
+    background-color: #18191a;
+    border: 1px solid #36383a;
+    border-radius: 4px;
+    color: #a6adc8;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.widget {
+    padding: 0 5px;
+    margin: 0;
+}

@@ -1,0 +1,11 @@
+notifications:
+  type: "yasb.notifications.NotificationsWidget"
+  options:
+    label: "<span>\uf476</span> {count}"
+    label_alt: "{count} notifications"
+    hide_empty: false
+    tooltip: false
+    callbacks:
+      on_left: "toggle_notification"
+      on_right: "do_nothing"
+      on_middle: "do_nothing"

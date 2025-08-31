@@ -1,0 +1,18 @@
+traffic:
+  type: "yasb.traffic.TrafficWidget"
+  options:
+    label: "{download_speed} | {upload_speed}"
+    label_alt: "Download {download_speed} | Upload {upload_speed}"
+    update_interval: 2000
+    menu:
+      blur: true
+      round_corners: true
+      round_corners_type: "normal"
+      border_color: "system"
+      alignment: "left"
+      direction: "down"
+      offset_top: 6
+      offset_left: 0
+    callbacks:
+      on_left: "toggle_menu"
+      on_right: "do_nothing"

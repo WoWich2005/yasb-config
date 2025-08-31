@@ -1,0 +1,14 @@
+nvme-load:
+  type: "yasb.libre_monitor.LibreHardwareMonitorWidget"
+  options:
+    label: "{info[value]}{info[unit]}"
+    label_alt: "{info[value]}{info[unit]}"
+    sensor_id: "/nvme/0/load/33"
+    update_interval: 5000
+    precision: 1
+    class_name: "nvme-load"
+    connection_error_label: "CE"
+    callbacks:
+      on_left: "do_nothing"
+      on_middle: "do_nothing"
+      on_right: "do_nothing"

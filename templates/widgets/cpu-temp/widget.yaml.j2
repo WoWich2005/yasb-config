@@ -1,0 +1,14 @@
+cpu-temp:
+  type: "yasb.libre_monitor.LibreHardwareMonitorWidget"
+  options:
+    label: "{info[value]}{info[unit]}"
+    label_alt: "{info[value]}{info[unit]}"
+    sensor_id: "/amdcpu/0/temperature/2"
+    update_interval: 5000
+    precision: 0
+    class_name: "cpu-temp"
+    connection_error_label: "CE"
+    callbacks:
+      on_left: "do_nothing"
+      on_middle: "do_nothing"
+      on_right: "do_nothing"

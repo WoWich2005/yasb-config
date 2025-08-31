@@ -1,0 +1,15 @@
+discharge-rate:
+  type: "yasb.custom.CustomWidget"
+  options:
+    label: "{data}"
+    label_alt: "{data}"
+    class_name: "discharge-rate"
+    exec_options:
+      run_cmd: "curl.exe -s -f http://127.0.0.1:8086/battery || echo CE"
+      run_interval: 5000
+      return_format: "string"
+      hide_empty: false
+    callbacks:
+      on_left: "do_nothing"
+      on_middle: "do_nothing"
+      on_right: "do_nothing"

@@ -1,0 +1,35 @@
+.glazewm-workspaces {
+    margin: 0;
+}
+
+.glazewm-workspaces .ws-btn {
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+    padding: 0px 4px 0px 4px;
+    margin: 0 2px 0 2px;
+    color: #CDD6F4;
+}
+
+.glazewm-workspaces .ws-btn.active_populated {
+    color: #C2DAF7;
+    background-color: #727272;
+}
+.glazewm-workspaces .ws-btn.active_empty {
+    color: #7D8B9D;
+    background-color: #727272;
+}
+
+.glazewm-workspaces .ws-btn.populated {
+    color: #C2DAF7;
+}
+
+.glazewm-workspaces .ws-btn.empty {
+    color: #7D8B9D;
+}
+
+.glazewm-workspaces .ws-btn:hover,
+.glazewm-workspaces .ws-btn.populated:hover,
+.glazewm-workspaces .ws-btn.empty:hover {
+    background-color: #727272;
+}

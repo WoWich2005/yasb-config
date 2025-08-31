@@ -1,0 +1,12 @@
+watch_stylesheet: true
+watch_config: true
+debug: false
+update_check: true
+bars:
+{% for bar in bars %}
+  {{ bar | indent(2) }}
+{% endfor %}
+widgets:
+{% for widget in widgets %}
+  {{ widget | indent(2) }}
+{% endfor %}

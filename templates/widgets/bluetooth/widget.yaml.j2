@@ -1,0 +1,19 @@
+bluetooth:
+  type: "yasb.bluetooth.BluetoothWidget"
+  options:
+    label: "<span>{icon}</span>"
+    label_alt: "<span>{icon}</span>"
+    label_no_device: ""
+    label_device_separator: ", "
+    max_length: 10
+    max_length_ellipsis: "..."
+    icons: 
+      bluetooth_on: "\udb80\udcaf"
+      bluetooth_off: "\udb80\udcb2"
+      bluetooth_connected: "\udb80\udcb1"
+    device_aliases:
+      - name: "T5.0"
+        alias: "\uf025"
+    callbacks:
+      on_left: "toggle_label"
+      on_right: "exec cmd.exe /c start ms-settings:bluetooth"

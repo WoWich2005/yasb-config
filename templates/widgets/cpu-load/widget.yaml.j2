@@ -1,0 +1,12 @@
+cpu-load:
+  type: "yasb.cpu.CpuWidget"
+  options:
+    label: "{info[percent][total]}%"
+    label_alt: "{info[percent][total]}%"
+    update_interval: 5000
+    cpu_thresholds:
+      low: 25
+      medium: 50
+      high: 90
+    callbacks:
+      on_left: do_nothing
